@@ -1,0 +1,13 @@
+<p>calculator works!</p>
+<h1>AnweSome Calculator</h1>
+<input type="number" [value]="NumberOne"  (change)="updateNumberOne($event.target.value)">
+<select  [value]='cal' (change)="updateCal($event.target.value)">
+  <option value="+" name="+">+</option>
+  <option value="-">-</option>
+  <option value="*">*</option>
+  <option value="/">/</option>
+</select>
+<input type="number" [value]="NumberTwo" (change)="updateNumberTwo($event.target.value)"><br/>
+<input type="submit" value="thuc thi" (click)="Caculator()">
+<p>ket qua:</p> {{result}}
+
